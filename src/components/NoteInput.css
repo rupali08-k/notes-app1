@@ -1,0 +1,40 @@
+.note-input {
+  position: relative;
+  margin-top: auto;
+}
+
+.note-input textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+  font-family: inherit;
+}
+
+.send-btn {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.send-btn.active {
+  background-color: #007bff;
+}
+
+.send-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
